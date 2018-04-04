@@ -99,9 +99,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     }
 }
 
-LoginForm.propTypes = {
+/*LoginForm.propTypes = {
     toggleLogIn: React.PropTypes.func.isRequired
-}
+}*/
 
 export default connect(
     mapStateToProps,

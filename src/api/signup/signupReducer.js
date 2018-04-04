@@ -24,9 +24,6 @@ export default (state = initialState, action = {}) => {
             };*/
 
         case SAVE_CURRENT_USER + '_BAD_REQUEST':
-            console.log('action = ', action)
-            console.log('action.response = ', action.response)
-            console.log('action.response.data = ', action.response.data)
             return {
                 errors: action.response.data,
                 isLoading: false
@@ -34,11 +31,15 @@ export default (state = initialState, action = {}) => {
 
         case CHECK_CURRENT_USER + '_BAD_REQUEST':
             return {
+                ...state,
                 errors: action.response.data,
                 isLoading: true
+                /*                errors: action.response.data,
+                                isLoading: true*/
             };
 
         case CHECK_CURRENT_USER + '_SUCCESS':
+            console.log('errors _SUCCESS reques: ', initialState.errors)
             return {
                 errors: action.response,
                 isLoading: false

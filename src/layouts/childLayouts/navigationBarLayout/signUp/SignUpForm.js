@@ -135,9 +135,9 @@ class SignUpForm extends Component {
     }
 }
 
-SignUpForm.propTypes = {
+/*SignUpForm.propTypes = {
     toogle: React.PropTypes.func
-}
+}*/
 
 const mapStateToProps = (state, ownProps) => {
     return {

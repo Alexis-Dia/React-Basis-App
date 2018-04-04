@@ -18,7 +18,7 @@ class TextFieldGroup extends Component {
         if (nextprops.errors !== this.props.errors) {
             var obj = nextprops.errors.find((obj) => obj.fieldName === this.props.field);
             if (isEmpty(obj)) {
-                this.setState({errorDescription: ''});
+                //this.setState({errorDescription: ''});
             } else {
                 this.setState({errorDescription: obj.errorDescription});
             }
@@ -59,14 +59,14 @@ class TextFieldGroup extends Component {
 
 }
 
-TextFieldGroup.propTypes = {
+/*TextFieldGroup.propTypes = {
     field: React.PropTypes.string,
     label: React.PropTypes.string,
     type: React.PropTypes.string,
     value: React.PropTypes.string,
     onChange: React.PropTypes.func.isRequired,
     frontendError: React.PropTypes.string
-}
+}*/
 
 const mapStateToProps = (state, ownProps) => {
     return {

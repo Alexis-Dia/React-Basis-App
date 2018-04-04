@@ -51,14 +51,14 @@ class SelectFieldGroup extends Component {
 
 }
 
-SelectFieldGroup.propTypes = {
+/*SelectFieldGroup.propTypes = {
     field: React.PropTypes.string,
     label: React.PropTypes.string,
     type: React.PropTypes.string,
     value: React.PropTypes.string,
     onChange: React.PropTypes.func.isRequired,
     frontendError: React.PropTypes.string
-}
+}*/
 
 const mapStateToProps = (state, ownProps) => {
     return {

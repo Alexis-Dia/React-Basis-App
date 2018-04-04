@@ -86,10 +86,10 @@ class NavigationBarLayout extends Component {
     }
 }
 
-NavigationBarLayout.propTypes = {
+/*NavigationBarLayout.propTypes = {
     auth: React.PropTypes.object.isRequired,
-/*    logout: React.PropTypes.func.isRequired*/
-}
+/!*    logout: React.PropTypes.func.isRequired*!/
+}*/
 
 function mapStateToProps(state) {
     return {
