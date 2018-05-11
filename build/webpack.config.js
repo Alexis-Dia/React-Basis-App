@@ -139,7 +139,7 @@ config.plugins.push(extractStyles)
 // Images
 // ------------------------------------
 config.module.rules.push({
-  test    : /\.(png|jpg|gif)$/,
+  test    : /\.(png|jpg|gif|p12)$/,
   loader  : 'url-loader',
   options : {
     limit : 8192,

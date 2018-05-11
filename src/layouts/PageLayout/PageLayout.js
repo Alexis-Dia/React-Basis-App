@@ -7,8 +7,8 @@ import NavigationBarLayout from '../childLayouts/navigationBarLayout/NavigationB
 import FlashMessagestList from '../childLayouts/flashMessageLayout/FlashMessageListLayout';
 
 export const PageLayout = ({ children }) => (
-  <div className='container text-center'>
-    <div className='page-layout__viewport'>
+  <div>
+    <div>
       <NavigationBarLayout />
       <FlashMessagestList />
         { children }
